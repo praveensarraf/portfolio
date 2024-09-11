@@ -278,22 +278,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 });
-
-
-
-
-// scroll reveal Animation
-// const sr = ScrollReveal({
-//     origin: 'bottom',
-//     distance: '30px',
-//     duration: 2000,
-//     reset: true
-// });
-
-// sr.reveal(`.mainHeader, .MainDescription, .mainConnectBox, 
-//     #aboutImgBox, #aboutDescription, 
-//     #projectsHeading, #myProjects, 
-//     #resumeHeading, #myResume, 
-//     #contactHeading, #myContact`, {
-//     interval: 200
-// });
