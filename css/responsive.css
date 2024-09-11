@@ -1,0 +1,436 @@
+@media screen and (max-width: 1050px){
+
+    /* Project section */
+    #myProjects #cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Contact Section */
+    #myContact .form-container{
+        width: 50%;
+    }
+
+    #connection-box{
+        width: 50%;
+    }
+
+    #connection-box #phone-mail{
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 850px){
+    nav.navigation{
+        position: fixed;
+        flex-direction: column;
+        height: 110px;
+    }
+
+    nav.navigation ul#menuLinks{
+        position: fixed;
+        top: 40px;
+        right: initial;
+    }
+
+    /* Section */
+    #home, #about, #projects, #resume, #contact{
+        padding-top: 110px;
+        margin-top: -110px;
+    }   
+
+    /* About Section */
+    #aboutImgBox{
+        width: 45%;
+        justify-content: start;
+    }
+
+    #aboutDescription{
+        width: 55%;
+        justify-content: start;
+    }
+
+
+    /* Project section */
+    #myProjects #cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Resume Section */
+    #myResume img{
+        width: 80%;
+    }
+
+
+    /* Contact Section */
+    #myContact{
+        flex-direction: column;
+    }
+
+    #myContact .form-container{
+        width: 80%;
+    }
+
+    #form h1{
+        font-size: 1em;
+    }
+
+    #connection-box{
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    #connection-box #phone-mail{
+        font-size: 1.2em;
+    }
+    
+    
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+
+    /* navbar */
+
+    nav.navigation{
+        flex-direction: row;
+        height: 70px;
+        padding: 0 10px;
+    }
+
+    nav.navigation .logo{
+        width: 100%;
+        position: fixed;
+        top: 10px;
+        justify-content: center;
+        white-space: nowrap;
+    }
+
+    nav.navigation .logo h2{
+        position: fixed;
+        top: 15px;
+    }
+
+    .humburger {
+        display: block;
+        position: fixed;
+    }
+
+    nav.navigation ul#menuLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+        width: 140px;
+        height: 100vh;
+        top: 70px;
+        left: 0;
+        opacity: 0;
+        transform: translateX(-150%);
+        transition: all 0.5s ease;
+        background: var(--textColor);
+    }
+    
+    nav.navigation ul#menuLinks.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    nav.navigation ul#menuLinks li{
+        width: 100%;
+    }
+
+    nav.navigation ul#menuLinks li a{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav.navigation ul#menuLinks li a .icon{
+        line-height: 85px;
+        margin-left: 0px;
+    }
+
+    nav.navigation ul#menuLinks li.active a .icon{
+        transform: translateY(0);
+        transform: translateX(65px);
+    }
+
+    nav.navigation ul#menuLinks li a .text{
+        right: 45px;
+        font-size: 1.25rem;
+        letter-spacing: 0.05em;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    nav.navigation ul#menuLinks li.active a .text{
+        transform: translateY(20px);
+    }
+
+    .indicator{
+        top: 5px;
+        left: 100px;
+    }
+
+    nav.navigation ul#menuLinks li:nth-child(1).active ~ .indicator{
+        transform: translateY(calc(90px * 0));
+    }
+
+    nav.navigation ul#menuLinks li:nth-child(2).active ~ .indicator{
+        transform: translateY(calc(90px * 1));
+    }
+
+    nav.navigation ul#menuLinks li:nth-child(3).active ~ .indicator{
+        transform: translateY(calc(90px * 2));
+    }
+
+    nav.navigation ul#menuLinks li:nth-child(4).active ~ .indicator{
+        transform: translateY(calc(90px * 3));
+    }
+
+    nav.navigation ul#menuLinks li:nth-child(5).active ~ .indicator{
+        transform: translateY(calc(90px * 4));
+    }
+
+
+
+    /* Section */
+    #home, #about, #projects, #resume, #contact{
+        padding-top: 70px;
+        margin-top: -70px;
+    }
+
+
+    /* Main Banner section */
+
+    .banner .mainHeader h1{
+        font-size: 2.5em;
+    }
+    
+    .banner .mainHeader h1.myName{
+        font-size: 3.5em;
+    }
+
+    .banner .MainDescription{
+        font-size: 1rem;
+    }
+
+    .banner .mainHeader h1.designation{
+        margin: 15px 0;
+    }
+
+    .banner .mainConnectBox{
+        gap: 5px;
+        padding: 0 10px;
+    }
+
+    .banner .mainConnectBox a{
+        font-size: 1rem;
+    }
+
+    .banner #dotsCanvas{
+        opacity: 0.5;
+    }
+
+
+    /* About Section */
+    #aboutMe{
+        flex-direction: column;
+    }
+
+    #aboutImgBox,
+    #aboutDescription{
+        width: 100%;
+    }
+
+    #aboutImgBox h1{
+        font-size: 2.5em;
+    }
+
+
+    /* Project section */
+    #ProjectsBox, #resumeBox, #contactBox{
+        padding: 0 20px;
+    }
+    
+    #myProjects #cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /* Resume section */
+    #myResume img{
+        width: 95%;
+    }
+
+    #myResume .resumeLinkBox{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #myResume .resumeLinkBox:last-child .resumeLink:last-child{
+        order: -1;
+    }
+
+    #challenges{
+        padding: 0 10px;
+        font-size: 1.3em;
+    }
+
+
+    /* Contact Section */
+    #myContact{
+        padding: 10px 0;
+    }
+
+    #myContact .form-container{
+        width: 100%;
+    }
+
+    #form h1{
+        font-size: 0.9em;
+    }
+
+    #form .input-control label{
+        margin-bottom: 2px;
+        font-size: 0.8em;
+    }
+
+    #form .input-control input,
+    #form .input-control select,
+    #form .input-control textarea{
+        font-size: 0.9em;
+        padding: 4px 7px;
+    }
+
+
+    #connection-box{
+        width: 100%;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    #connection-box > h2{
+        font-size: 1.5em;
+    }
+
+    #connection-box > h3{
+        font-size: 1em;
+        margin-top: 35px;
+    }
+
+    #connection-box #phone-mail{
+        font-size: 0.83em;
+        margin-bottom: 5px;
+    }
+
+    #socials-1 ul li,
+    #socials-2 ul li{
+        width: 30px;
+        height: 30px;
+    }
+
+    #socials-1 ul li .social-link,
+    #socials-2 ul li .social-link{
+        font-size: 1rem;
+    }
+
+
+    #myQuote{
+        padding: 10px;
+        font-size: 1em;
+    }
+}
+
+
+
+
+@media screen and (max-width: 300px){
+
+    /* Navbar */
+    nav.navigation .logo h2{
+        font-size: 20px;
+        white-space: wrap;
+    }
+
+    /* Main Banner section */
+    .banner .mainHeader h1{
+        font-size: 2em;
+    }
+    
+    .banner .mainHeader h1.myName{
+        font-size: 3em;
+    }
+
+    .banner .MainDescription{
+        font-size: 0.85rem;
+    }
+
+    .banner .mainHeader h1.designation{
+        margin: 10px 0;
+    }
+
+    .banner .mainConnectBox{
+        gap: 5px;
+        padding: 0 5px;
+    }
+
+    .banner .mainConnectBox a{
+        font-size: 0.85rem;
+    }
+
+
+    /* About Section */
+    #aboutImgBox h1{
+        font-size: 1.8em;
+    }
+
+    #aboutImgBox img{
+        width: 100%;
+        border-width: 4px;
+    }
+
+    #aboutDescription{
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* Project Section */
+    #ProjectsBox #projectsHeading,
+    #resumeBox #resumeHeading,
+    #contactBox #contactHeading{
+        font-size: 1.2em;
+    }
+
+    /* Resume Section */
+    #myResume .resumeLinkBox .resumeLink{
+        font-size: 0.8em;
+    }
+
+    /* Contact Section */
+
+    #connection-box > h2{
+        font-size: 1.3em;
+    }
+
+    #connection-box #phone-mail{
+        font-size: 0.65em;
+    }
+
+    #socials-1 ul li,
+    #socials-2 ul li{
+        width: 25px;
+        height: 25px;
+    }
+
+    #socials-1 ul li .social-link,
+    #socials-2 ul li .social-link{
+        font-size: 0.8rem;
+    }
+}
